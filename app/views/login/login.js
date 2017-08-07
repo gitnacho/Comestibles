@@ -1,3 +1,5 @@
+var frameModule = require("ui/frame");
+
 exports.loaded = function () {
   console.log("¡Hola!");
 };
@@ -7,5 +9,6 @@ exports.signIn = function () {
 };
 
 exports.register = function () {
-  alert("Inscribiéndo");
+  var topmost = frameModule.topmost();
+  topmost.navigate("views/register/register");
 };
