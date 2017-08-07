@@ -1,0 +1,10 @@
+<Page loaded="loaded">
+    <StackLayout>
+        <Image src="res://logo" stretch="none" horizontalAlignment="center"/>
+
+        <TextField text="{{ email }}" id="email" hint="Dirección de correo electrónico" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+        <TextField text="{{ password }}" secure="true" hint="Contraseña" />
+
+        <Button text="Inscríbeme" tap="register" />
+    </StackLayout>
+</Page>
