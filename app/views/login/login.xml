@@ -1,11 +1,11 @@
-<Page>
+<Page loaded="loaded">
     <StackLayout orientation="vertical">
        <Image src="res://logo" stretch="none" horizontalAlignment="center" />
 
         <TextField hint="Dirección de correo electrónico" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
         <TextField hint="Contraseña" secure="true" />
 
-        <Button text="Iniciar sesión" />
-        <Button class="link" text="Inscríbeme en Comestibles" />
+        <Button text="Iniciar sesión" tap="signIn" />
+        <Button class="link" text="Inscríbeme en Comestibles" tap="register" />
     </StackLayout>
 </Page>
