@@ -4,6 +4,6 @@
         <TextField hint="Contraseña" secure="true" />
 
         <Button text="Iniciar sesión" />
-        <Button text="Inscríbeme en Comestibles" />
+        <Button class="link" text="Inscríbeme en Comestibles" />
     </StackLayout>
 </Page>
