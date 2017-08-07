@@ -1,5 +1,7 @@
 <Page>
     <StackLayout orientation="vertical">
+       <Image src="res://logo" stretch="none" horizontalAlignment="center" />
+
         <TextField hint="Dirección de correo electrónico" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
         <TextField hint="Contraseña" secure="true" />
 
