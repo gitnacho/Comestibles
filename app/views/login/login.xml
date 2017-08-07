@@ -1,7 +1,9 @@
 <Page>
-    <TextField hint="Dirección de correo electrónico" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
-    <TextField hint="Contraseña" secure="true" />
+    <StackLayout orientation="vertical">
+        <TextField hint="Dirección de correo electrónico" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+        <TextField hint="Contraseña" secure="true" />
 
-    <Button text="Iniciar sesión" />
-    <Button text="Inscríbeme en Comestibles" />
+        <Button text="Iniciar sesión" />
+        <Button text="Inscríbeme en Comestibles" />
+    </StackLayout>
 </Page>
