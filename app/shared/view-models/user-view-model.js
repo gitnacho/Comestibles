@@ -23,7 +23,7 @@ function User(info) {
                     "Content-Type": "application/json"
                 }
             })
-            .then(hancleErrors)
+            .then(handleErrors)
             .then(function (response) {
                 return response.json();
             })
