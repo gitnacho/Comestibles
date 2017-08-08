@@ -1,9 +1,8 @@
 var frameModule = require("ui/frame");
-var observableModule = require("data/observable");
+var UserViewModel = require("../../shared/view-models/user-view-model");
 var page;
-var email;
 
-var user = new observableModule.fromObject({
+var user = new UserViewModel({
   email: "usuario@dominio.com",
   password: "contraseña"
 });
@@ -14,8 +13,7 @@ exports.loaded = function (args) {
 };
 
 exports.signIn = function () {
-  email = page.getViewById("email");
-  console.log(email.text);
+  user.login();
 };
 
 exports.register = function () {
