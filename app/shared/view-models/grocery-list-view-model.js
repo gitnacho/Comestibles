@@ -8,7 +8,7 @@ function GroceryListViewModel(items) {
     viewModel.load = function () {
         return fetch(config.apiUrl + "Groceries", {
                 headers: {
-                    "Autorization": "Bearer " + config.token
+                    "Authorization": "Bearer " + config.token
                 }
             })
             .then(handleErrors)
@@ -18,7 +18,7 @@ function GroceryListViewModel(items) {
                 data.Result.forEach(function (grocery) {
                     viewModel.push({
                         name: grocery.Name,
-                        id: grocery.id
+                        id: grocery.Id
                     });
                 });
             });
